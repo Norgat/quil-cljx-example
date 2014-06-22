@@ -10,7 +10,8 @@
 (q/defsketch quil-cljx-example
 	:draw draw
 	:host "quil-cljx-example"
-	:size [300 300])
+	:size [300 300]
+	:features [:no-start])
 
 #+clj
 (defn -main [])

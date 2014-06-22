@@ -24,4 +24,5 @@
 (q/defsketch control
 	:draw draw
 	:host "quil-control"
-	:size [300 300])
+	:size [300 300]
+	:features [:no-start])
