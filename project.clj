@@ -18,10 +18,10 @@
                  :output-path "target/gen/quil_cljx_example"
                  :rules :cljs}]}
 
-  :source-paths ["target/gen" "src"]
+  :source-paths ["target/gen"]
 
   :cljsbuild
-  {:builds [{:source-paths ["target/gen" "src"]
+  {:builds [{:source-paths ["target/gen"]
              :compiler
              {:output-to "web/js/main.js"
               :optimizations :whitespace
