@@ -1,7 +1,6 @@
 (ns quil-cljx-example.core
 	(:require [quil.core :as q])
-	#+cljs (:require-macros [quil.core :as q])
-	)
+	#+cljs (:require-macros [quil.core :as q]))
 
 (defn draw []
 	(q/background 255)
