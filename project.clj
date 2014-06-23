@@ -4,7 +4,7 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.5.1"]
-  				      [org.clojars.norgat/quil "2.0.0-alpha"]
+  				      [org.clojars.norgat/quil "2.0.1-SNAPSHOT"]
   				      [org.clojure/clojurescript "0.0-2234"]]
 
   :plugins [[com.keminglabs/cljx "0.4.0"]
@@ -24,7 +24,8 @@
   {:builds [{:source-paths ["target/gen"]
              :compiler
              {:output-to "web/js/main.js"
-              :optimizations :whitespace
-              :pretty-print true}}]}
+              :externs ["web/js/processing.js"]
+              :optimizations :advanced
+              :pretty-print false}}]}
 
   :main quil-cljx-example.core)
